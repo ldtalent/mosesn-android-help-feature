@@ -16,7 +16,7 @@
     * [Download Android Studio](#download-android-studio)
     * [Open the project](#open-the-project)
     * [Run the app](#run-the-app)
-    * [Troubleshooting](#troubleshooting)
+  
 
 # Requirements
 
