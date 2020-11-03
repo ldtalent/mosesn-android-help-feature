@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Charity Care</string>
+    <string name="radiodonor">Donor</string>
+    <string name="radiodisabled">Disabled</string>
+
+    <string name="radiomale">Male</string>
+    <string name="radiofemale">Female</string>
+    <string name="radioother">Other</string>
+
+
+    <string name="radioaccident">Accident</string>
+    <string name="radioabirth">By Birth</string>
+    <string name="radioillness">Illness</string>
+
+
+    <string name="radiosingle">Single</string>
+    <string name="radiomarried">Married</string>
+
+
+    <string name="radiomedical">Medical</string>
+    <string name="radiotraining">Training/Vacation</string>
+    <string name="radiospecify">Other</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_donor">Charity Care</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_posts">Posts</string>
+    <string name="menu_messages">Slideshow</string>
+    <string name="menu_send">Help</string>
+    <string name="title_activity_disable_home">DisableHomeActivity</string>
+    <string name="nav_header_title">Charity Care</string>
+    <string name="nav_header_subtitle">Welcome to charity care help</string>
+    <string name="action_disablelogout">Logout</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_tools">Settings</string>
+    <string name="reports">Reports</string>
+    <string name="visual_start_guide">Visual Start Guide</string>
+    <string name="open_visual_start_guide">Open Visual Start Guide</string>
+    <string name="blue_circle">Please, remember to click inside the blue circle</string>
+    <string name="step_1">Step 1</string>
+    <string name="grant_permissions">Permission</string>
+    <string name="step_2">Step 2</string>
+    <string name="start_guide">Step 3</string>
+    <string name="step_3">Step 3</string>
+    <string name="take_photo">four</string>
+    <string name="step_4">Step 4</string>
+    <string name="click_drop_down">Payment</string>
+    <string name="step_5">Step 5</string>
+    <string name="browse_image">Step 5</string>
+    <string name="payment_report">Payment Report</string>
+    <string name="disabled_users_report">Disabled Users Report</string>
+
+
+</resources>

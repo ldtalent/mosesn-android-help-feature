@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".activities.MainActivity">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Charity Care"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorRed"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/logo"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginRight="24dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_toEndOf="@+id/title"
+                        android:layout_toRightOf="@+id/title"
+                        android:elevation="5dp"
+                        android:src="@mipmap/ic_launcher" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="Please provide the payment information"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text="Username"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="5dp"
+                        android:text="Amount the in need."
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:padding="5dp"
+                        android:text="Amount"
+                        android:textColor="@color/colorRed"
+                        app:layout_constraintEnd_toEndOf="@+id/description"
+                        app:layout_constraintStart_toStartOf="@id/description"
+                        app:layout_constraintTop_toBottomOf="@id/description" />
+
+                    <TextView
+                        android:id="@+id/pnoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Phone Number"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/description"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:padding="5dp"
+                        android:text="Phone"
+                        android:textColor="@color/colorRed"
+                        app:layout_constraintEnd_toEndOf="@id/pnoneNumber"
+                        app:layout_constraintStart_toStartOf="@id/pnoneNumber"
+                        app:layout_constraintTop_toBottomOf="@id/pnoneNumber" />
+
+                    <Button
+                        android:id="@+id/btn_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/button_pay"
+                        android:drawableRight="@drawable/ic_copy"
+                        android:drawableTint="@color/blue"
+                        android:padding="4dp"
+                        android:text="Copy Phone Number"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/amount" />
+
+                    <TextView
+                        android:id="@+id/donorDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="5dp"
+                        android:text="Amount Willing to contribute"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btn_copy" />
+
+                    <EditText
+                        android:id="@+id/edit_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/input_field"
+                        android:hint="Ksh."
+                        android:inputType="number"
+                        android:padding="15dp"
+                        android:textColor="@color/colorRed"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/donorDescription" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_Mpesa"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/green"
+                        android:padding="8dp"
+                        android:text="Pay via M-Pesa"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+
+                        android:id="@+id/btn_Paypal"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/blue"
+                        android:padding="8dp"
+                        android:text="Pay via Paypal"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</ScrollView>
